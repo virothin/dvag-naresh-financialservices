@@ -85,7 +85,7 @@ a {
   cursor: pointer;
 }
 
-/* ✅ FIX #1 — SHOW DESKTOP DE | EN */
+/* SHOW DESKTOP DE | EN */
 .nav-right {
   display: flex;
   align-items: center;
@@ -117,8 +117,6 @@ a {
 .hero-content {
   max-width: 650px;
   padding-top: 120px;
-  background: none;
-  border-radius: 0;
 }
 
 .eyebrow {
@@ -366,13 +364,15 @@ a {
 /* ------------------------------
    MOBILE OPTIMIZATION
 ------------------------------ */
+
 @media (max-width: 600px) {
 
+  /* ✅ FIXED HERO OVERLAP */
   .hero-inner {
     height: auto;
-    padding: 40px 20px;
-    background-size: 80%;
-    background-position: center bottom;
+    padding: 160px 20px 40px; /* pushes text down */
+    background-size: 95%;
+    background-position: center top; /* keeps face visible */
     flex-direction: column;
     align-items: flex-start;
   }
@@ -380,14 +380,17 @@ a {
   .hero-content {
     max-width: 100%;
     padding: 0;
+    text-align: left;
   }
 
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.25;
   }
 
   .hero-sub {
     font-size: 16px;
+    line-height: 1.45;
   }
 
   .footer {
@@ -409,7 +412,7 @@ a {
 }
 
 /* ------------------------------
-   MOBILE HAMBURGER MENU (ONLY MOBILE)
+   MOBILE HAMBURGER MENU
 ------------------------------ */
 
 .hamburger {
@@ -422,14 +425,11 @@ a {
   display: none;
 }
 
-/* Desktop nav stays visible */
 .nav-links {
   display: flex;
 }
 
-/* ------------------------------
-   FIX #2 — HIDE MOBILE MENU ON DESKTOP
------------------------------- */
+/* Hide mobile menu on desktop */
 .mobile-menu {
   display: none;
 }
@@ -437,6 +437,7 @@ a {
 /* ------------------------------
    MOBILE BREAKPOINT
 ------------------------------ */
+
 @media (max-width: 700px) {
 
   .nav-links,

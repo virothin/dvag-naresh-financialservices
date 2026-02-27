@@ -85,6 +85,12 @@ a {
   cursor: pointer;
 }
 
+/* ✅ FIX ADDED HERE — THIS MAKES DE | EN VISIBLE ON DESKTOP */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
 /* ------------------------------
    HERO (UNIFIED)
 ------------------------------ */
@@ -105,16 +111,15 @@ a {
 
   display: flex;
   align-items: center;
-  padding: 50px 20px;   /* SAME AS ALL OTHER PAGES */
+  padding: 50px 20px;
 }
 
 .hero-content {
   max-width: 650px;
-  padding-top: 120px;           /* optional */
+  padding-top: 120px;
   background: none;
   border-radius: 0;
 }
-
 
 .eyebrow {
   font-size: 20px;
@@ -363,7 +368,6 @@ a {
 ------------------------------ */
 @media (max-width: 600px) {
 
-  /* HERO */
   .hero-inner {
     height: auto;
     padding: 40px 20px;
@@ -386,7 +390,6 @@ a {
     font-size: 16px;
   }
 
-  /* FOOTER */
   .footer {
     padding: 40px 20px 0;
   }
@@ -416,7 +419,7 @@ a {
   cursor: pointer;
   padding: 6px 10px;
   line-height: 1;
-  display: none; /* hidden on desktop */
+  display: none;
 }
 
 /* Desktop nav stays visible */
@@ -424,27 +427,22 @@ a {
   display: flex;
 }
 
-.nav-right {
-  display: block;
-}
+/* nav-right desktop visibility is already fixed above */
 
 /* ------------------------------
    MOBILE BREAKPOINT
 ------------------------------ */
 @media (max-width: 700px) {
 
-  /* Hide desktop nav on mobile */
   .nav-links,
   .nav-right {
     display: none !important;
   }
 
-  /* Show hamburger on mobile */
   .hamburger {
     display: block;
   }
 
-  /* Slide-down menu */
   .mobile-menu {
     max-height: 0;
     overflow: hidden;

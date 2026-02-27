@@ -85,7 +85,7 @@ a {
   cursor: pointer;
 }
 
-/* ✅ FIX ADDED HERE — THIS MAKES DE | EN VISIBLE ON DESKTOP */
+/* ✅ FIX #1 — SHOW DESKTOP DE | EN */
 .nav-right {
   display: flex;
   align-items: center;
@@ -427,7 +427,12 @@ a {
   display: flex;
 }
 
-/* nav-right desktop visibility is already fixed above */
+/* ------------------------------
+   FIX #2 — HIDE MOBILE MENU ON DESKTOP
+------------------------------ */
+.mobile-menu {
+  display: none;
+}
 
 /* ------------------------------
    MOBILE BREAKPOINT
@@ -444,10 +449,10 @@ a {
   }
 
   .mobile-menu {
+    display: flex;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    display: flex;
     flex-direction: column;
     background: #f7efe3;
     border-top: 1px solid #e0d4c2;

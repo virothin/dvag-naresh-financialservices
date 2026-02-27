@@ -10,28 +10,42 @@
 
   <body>
 
-    <!-- NAVBAR (UPDATED FOR HAMBURGER ALWAYS) -->
-    <header class="navbar">
-      <div class="nav-left">
-        <span class="brand">Naresh Virothi</span>
-        <span class="brand-sub lang-de">Finanzberater in Deutschland</span>
-        <span class="brand-sub lang-en">Financial Advisor in Germany</span>
-      </div>
+<!-- NAVBAR (DESKTOP NAV + MOBILE HAMBURGER) -->
+<header class="navbar">
+  <div class="nav-left">
+    <span class="brand">Naresh Virothi</span>
+    <span class="brand-sub lang-de">Finanzberater in Deutschland</span>
+    <span class="brand-sub lang-en">Financial Advisor in Germany</span>
+  </div>
 
-      <!-- HAMBURGER ALWAYS VISIBLE -->
-      <button class="hamburger" id="hamburger">☰</button>
+  <!-- DESKTOP NAVIGATION -->
+  <nav class="nav-links">
+    <a href="index.html"><span class="lang-de">Start</span><span class="lang-en">Home</span></a>
+    <a href="services.html"><span class="lang-de">Leistungen</span><span class="lang-en">Services</span></a>
+    <a href="about.html"><span class="lang-de">Über mich</span><span class="lang-en">About</span></a>
+    <a href="contact.html"><span class="lang-de">Kontakt</span><span class="lang-en">Contact</span></a>
+  </nav>
 
-      <!-- MOBILE/DESKTOP MENU (SLIDE DOWN) -->
-      <nav class="mobile-menu" id="mobile-menu">
-        <a href="index.html"><span class="lang-de">Start</span><span class="lang-en">Home</span></a>
-        <a href="services.html"><span class="lang-de">Leistungen</span><span class="lang-en">Services</span></a>
-        <a href="about.html"><span class="lang-de">Über mich</span><span class="lang-en">About</span></a>
-        <a href="contact.html"><span class="lang-de">Kontakt</span><span class="lang-en">Contact</span></a>
+  <!-- DESKTOP LANGUAGE TOGGLE (VISIBLE ON DESKTOP) -->
+  <div class="nav-right">
+    <button id="lang-toggle" class="lang-toggle">DE | EN</button>
+  </div>
 
-        <!-- MOBILE LANGUAGE TOGGLE -->
-        <button id="lang-toggle-mobile" class="lang-toggle-mobile">DE | EN</button>
-      </nav>
-    </header>
+  <!-- MOBILE HAMBURGER (VISIBLE ONLY ON MOBILE) -->
+  <button class="hamburger" id="hamburger">☰</button>
+
+  <!-- MOBILE MENU (SLIDE DOWN) -->
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="index.html"><span class="lang-de">Start</span><span class="lang-en">Home</span></a>
+    <a href="services.html"><span class="lang-de">Leistungen</span><span class="lang-en">Services</span></a>
+    <a href="about.html"><span class="lang-de">Über mich</span><span class="lang-en">About</span></a>
+    <a href="contact.html"><span class="lang-de">Kontakt</span><span class="lang-en">Contact</span></a>
+
+    <!-- MOBILE LANGUAGE TOGGLE -->
+    <button id="lang-toggle-mobile" class="lang-toggle-mobile">DE | EN</button>
+  </nav>
+</header>
+
 
     <main>
 

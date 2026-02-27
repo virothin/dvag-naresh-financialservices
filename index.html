@@ -10,7 +10,7 @@
 
   <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR (UPDATED FOR HAMBURGER ALWAYS) -->
     <header class="navbar">
       <div class="nav-left">
         <span class="brand">Naresh Virothi</span>
@@ -18,21 +18,24 @@
         <span class="brand-sub lang-en">Financial Advisor in Germany</span>
       </div>
 
-      <nav class="nav-links">
+      <!-- HAMBURGER ALWAYS VISIBLE -->
+      <button class="hamburger" id="hamburger">☰</button>
+
+      <!-- MOBILE/DESKTOP MENU (SLIDE DOWN) -->
+      <nav class="mobile-menu" id="mobile-menu">
         <a href="index.html"><span class="lang-de">Start</span><span class="lang-en">Home</span></a>
         <a href="services.html"><span class="lang-de">Leistungen</span><span class="lang-en">Services</span></a>
         <a href="about.html"><span class="lang-de">Über mich</span><span class="lang-en">About</span></a>
         <a href="contact.html"><span class="lang-de">Kontakt</span><span class="lang-en">Contact</span></a>
-      </nav>
 
-      <div class="nav-right">
-        <button id="lang-toggle" class="lang-toggle">DE | EN</button>
-      </div>
+        <!-- MOBILE LANGUAGE TOGGLE -->
+        <button id="lang-toggle-mobile" class="lang-toggle-mobile">DE | EN</button>
+      </nav>
     </header>
 
     <main>
 
-      <!-- HERO WITH BACKGROUND IMAGE (FIXED) -->
+      <!-- HERO WITH BACKGROUND IMAGE (UNCHANGED) -->
       <section class="hero-bg">
         <div class="hero-inner">
           <div class="hero-content">
@@ -49,7 +52,6 @@
                 Book an appointment
               </a>
 
-              <!-- FIXED WHATSAPP NUMBER -->
               <a href="https://wa.me/4917688193867" target="_blank" rel="noopener" class="btn btn-outline">
                 Quick advice (WhatsApp)
               </a>
@@ -60,7 +62,7 @@
         </div>
       </section>
 
-      <!-- REST OF PAGE (unchanged) -->
+      <!-- REST OF YOUR PAGE (UNCHANGED) -->
       <section class="section">
         <div class="lang-de">
           <h2>Finanzielle Klarheit für Ihr Leben in Deutschland.</h2>
@@ -72,7 +74,6 @@
         </div>
       </section>
 
-      <!-- SERVICES PREVIEW -->
       <section class="section section-light">
         <div class="section-header">
           <div class="lang-de"><h3>Wobei ich Sie unterstützen kann</h3></div>
@@ -92,7 +93,6 @@
         </a>
       </section>
 
-      <!-- WHY WORK WITH ME -->
       <section class="section">
         <div class="section-header">
           <div class="lang-de"><h3>Warum mit mir zusammenarbeiten?</h3></div>
@@ -107,7 +107,6 @@
         </div>
       </section>
 
-      <!-- CTA -->
       <section class="section section-light cta-section">
         <div class="lang-de"><h3>Bereit, Ihr Finanzleben zu vereinfachen?</h3><p>Vereinbaren Sie ein unverbindliches Erstgespräch.</p></div>
         <div class="lang-en"><h3>Ready to simplify your financial life?</h3><p>Book a non‑binding introductory call.</p></div>
@@ -120,7 +119,6 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-grid">
         <div class="footer-col">
@@ -142,10 +140,9 @@
           <p>Phone (WhatsApp): +49 176 88193867</p>
           <p>Email: naresh.virothi@dvag.de</p>
           <a href="https://outlook.office.com/book/FinanzberatungmitNareshVirothi@dvag02.onmicrosoft.com/"
-   target="_blank" rel="noopener" class="btn footer-btn">
-  Termin buchen
-</a>
-
+             target="_blank" rel="noopener" class="btn footer-btn">
+            Termin buchen
+          </a>
         </div>
       </div>
 

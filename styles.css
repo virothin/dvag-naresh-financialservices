@@ -367,29 +367,31 @@ a {
 
 @media (max-width: 600px) {
 
-  /* ✅ FIXED HERO OVERLAP */
+  /* HERO TEXT ON IMAGE WITHOUT COVERING FACE */
   .hero-inner {
-    height: auto;
-    padding: 160px 20px 40px; /* pushes text down */
-    background-size: 95%;
-    background-position: center top; /* keeps face visible */
-    flex-direction: column;
+    height: 520px;
+    padding: 40px 20px 20px;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
     align-items: flex-start;
   }
 
   .hero-content {
-    max-width: 100%;
-    padding: 0;
+    max-width: 65%;
+    padding-top: 0;
+    margin-top: 20px;
     text-align: left;
   }
 
   .hero-content h1 {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.25;
+    word-break: break-word;
   }
 
   .hero-sub {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.45;
   }
 
@@ -440,13 +442,29 @@ a {
 
 @media (max-width: 700px) {
 
-  .nav-links,
-  .nav-right {
+  .nav-links {
     display: none !important;
   }
 
+  /* SHOW DE | EN ON MOBILE */
+  .nav-right {
+    display: block !important;
+    position: absolute;
+    right: 60px;
+    top: 22px;
+  }
+
+  .nav-right button {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+
+  /* MOVE HAMBURGER TO RIGHT */
   .hamburger {
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 18px;
   }
 
   .mobile-menu {
